@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Welcome To Edgistify</title>
+  </head>
+  <body>
+    <nav class="navbar bg-dark">
+      <h1>
+        <a href="index.html">Edgistify</a>
+      </h1>
+      <ul>
+        <li><a href="profiles.html">Registered users</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+    <section class="container">
+      <h1 class="large text-primary">Sign Up</h1>
+      <p class="lead"><i class="fas fa-user"></i> Create Your Account</p>
+      <form class="form" action="create-profile.html">
+        <div class="form-group">
+          <input type="text" placeholder="Name" name="name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Email Address" name="email" />
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            placeholder="Password"
+            name="password"
+            minLength="8"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            name="password2"
+            minLength="8"
+          />
+        </div>
+        <input type="submit" class="btn btn-primary" value="Register" />
+      </form>
+      <p class="my-1">
+        Already have an account? <a href="login.html">Sign In</a>
+      </p>
+    </section>
+  </body>
+</html>
